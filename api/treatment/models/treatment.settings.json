@@ -34,8 +34,8 @@
       "required": false
     },
     "categories": {
-      "collection": "category",
       "via": "treatments",
+      "collection": "category",
       "dominant": true
     }
   }

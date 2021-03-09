@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/pages",
-      "handler": "page.find",
+      "path": "/messages",
+      "handler": "message.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/pages/count",
-      "handler": "page.count",
+      "path": "/messages/count",
+      "handler": "message.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/pages/:id",
-      "handler": "page.findOne",
+      "path": "/messages/:id",
+      "handler": "message.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/pages",
-      "handler": "page.create",
+      "path": "/messages",
+      "handler": "message.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/pages/:id",
-      "handler": "page.update",
+      "path": "/messages/:id",
+      "handler": "message.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/pages/:id",
-      "handler": "page.delete",
+      "path": "/messages/:id",
+      "handler": "message.delete",
       "config": {
         "policies": []
       }

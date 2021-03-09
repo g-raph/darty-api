@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "contact_pages",
   "info": {
-    "name": "Contact page"
+    "name": "Contact page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -26,6 +27,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "open": {
+      "type": "richtext"
     }
   }
 }
