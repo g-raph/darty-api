@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "treatments",
+  "collectionName": "articles",
   "info": {
-    "name": "Treatment",
+    "name": "Article",
     "description": ""
   },
   "options": {
@@ -11,18 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "description": {
+    "Text": {
       "type": "richtext"
     },
-    "price": {
-      "type": "decimal"
-    },
-    "images": {
+    "Images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -33,14 +30,14 @@
       "plugin": "upload",
       "required": false
     },
-    "categories": {
-      "via": "treatments",
-      "collection": "category",
-      "dominant": true
-    },
-    "slug": {
+    "Slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "Title"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "articles",
+      "dominant": true
     }
   }
 }

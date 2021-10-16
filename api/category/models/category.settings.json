@@ -16,10 +16,6 @@
       "required": true,
       "unique": true
     },
-    "treatments": {
-      "collection": "treatment",
-      "via": "categories"
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -34,6 +30,14 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "articles": {
+      "via": "categories",
+      "collection": "articles"
+    },
+    "timeslots": {
+      "via": "categories",
+      "collection": "timeslot"
     }
   }
 }
