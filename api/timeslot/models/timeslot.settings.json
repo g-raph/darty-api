@@ -32,6 +32,10 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "teams": {
+      "via": "timeslots",
+      "collection": "team"
     }
   }
 }

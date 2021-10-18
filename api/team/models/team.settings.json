@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "teams",
   "info": {
-    "name": "Article",
-    "description": ""
+    "name": "team"
   },
   "options": {
     "increments": true,
@@ -11,15 +10,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "Text": {
+    "text": {
       "type": "richtext"
     },
-    "Images": {
+    "images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,18 +29,24 @@
       "plugin": "upload",
       "required": false
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Title"
+      "targetField": "title"
+    },
+    "timeslots": {
+      "collection": "timeslot",
+      "via": "teams",
+      "dominant": true
+    },
+    "articles": {
+      "collection": "articles",
+      "via": "teams",
+      "dominant": true
     },
     "categories": {
       "collection": "category",
-      "via": "articles",
+      "via": "teams",
       "dominant": true
-    },
-    "teams": {
-      "via": "articles",
-      "collection": "team"
     }
   }
 }

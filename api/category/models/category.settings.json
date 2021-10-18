@@ -38,6 +38,10 @@
     "timeslots": {
       "via": "categories",
       "collection": "timeslot"
+    },
+    "teams": {
+      "via": "categories",
+      "collection": "team"
     }
   }
 }
