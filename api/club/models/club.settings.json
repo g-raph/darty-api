@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "clubs",
+  "info": {
+    "name": "club",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}
