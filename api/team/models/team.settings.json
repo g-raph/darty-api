@@ -35,8 +35,8 @@
       "targetField": "title"
     },
     "timeslots": {
-      "collection": "timeslot",
       "via": "teams",
+      "collection": "timeslot",
       "dominant": true
     },
     "articles": {
