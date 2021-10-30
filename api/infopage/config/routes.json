@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infopages",
+      "handler": "infopage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infopages/count",
+      "handler": "infopage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infopages/:slug",
+      "handler": "infopage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/infopages",
+      "handler": "infopage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infopages/:id",
+      "handler": "infopage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infopages/:id",
+      "handler": "infopage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
