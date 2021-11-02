@@ -33,16 +33,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "downloadfiles": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
     }
   }
 }
