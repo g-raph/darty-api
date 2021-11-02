@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infoblock",
+      "handler": "infoblock.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infoblock",
+      "handler": "infoblock.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infoblock",
+      "handler": "infoblock.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
