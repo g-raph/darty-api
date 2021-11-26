@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "game",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "players": {
+      "collection": "player",
+      "via": "games",
+      "dominant": true
+    },
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "startScore": {
+      "type": "integer",
+      "default": 501
+    },
+    "scores": {
+      "collection": "score"
+    }
+  }
+}

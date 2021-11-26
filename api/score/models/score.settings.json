@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scores",
+  "info": {
+    "name": "score"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "player": {
+      "model": "player"
+    },
+    "previousScore": {
+      "type": "integer"
+    },
+    "totalScore": {
+      "type": "integer"
+    },
+    "newScore": {
+      "type": "integer"
+    },
+    "pijl1": {
+      "type": "integer"
+    },
+    "pijl2": {
+      "type": "integer"
+    },
+    "pijl3": {
+      "type": "integer"
+    }
+  }
+}
