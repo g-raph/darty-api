@@ -16,13 +16,21 @@
       "unique": true,
       "required": true
     },
-    "games": {
-      "via": "players",
-      "collection": "game"
+    "worps": {
+      "collection": "worp",
+      "via": "player"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "Name"
+    "games": {
+      "collection": "game",
+      "via": "players",
+      "dominant": true
+    },
+    "wins": {
+      "collection": "game",
+      "via": "winner"
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

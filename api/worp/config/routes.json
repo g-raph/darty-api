@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/scores",
-      "handler": "score.find",
+      "path": "/worps",
+      "handler": "worp.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/scores/count",
-      "handler": "score.count",
+      "path": "/worps/count",
+      "handler": "worp.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/scores/:id",
-      "handler": "score.findOne",
+      "path": "/worps/:id",
+      "handler": "worp.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/scores",
-      "handler": "score.create",
+      "path": "/worps",
+      "handler": "worp.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/scores/:id",
-      "handler": "score.update",
+      "path": "/worps/:id",
+      "handler": "worp.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/scores/:id",
-      "handler": "score.delete",
+      "path": "/worps/:id",
+      "handler": "worp.delete",
       "config": {
         "policies": []
       }

@@ -11,11 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "players": {
-      "collection": "player",
-      "via": "games",
-      "dominant": true
-    },
     "name": {
       "type": "string",
       "unique": true,
@@ -25,8 +20,25 @@
       "type": "integer",
       "default": 501
     },
-    "scores": {
-      "collection": "score"
+    "worps": {
+      "collection": "worp",
+      "via": "game"
+    },
+    "players": {
+      "via": "games",
+      "collection": "player"
+    },
+    "currentPlayerIndex": {
+      "type": "integer",
+      "default": 0
+    },
+    "finished": {
+      "type": "boolean",
+      "default": false
+    },
+    "winner": {
+      "via": "wins",
+      "model": "player"
     }
   }
 }

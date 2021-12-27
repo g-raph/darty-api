@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "scores",
+  "collectionName": "worps",
   "info": {
-    "name": "score"
+    "name": "worp",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,26 +11,31 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "player": {
-      "model": "player"
-    },
     "previousScore": {
       "type": "integer"
     },
-    "totalScore": {
+    "arrow1": {
+      "type": "integer"
+    },
+    "arrow2": {
+      "type": "integer"
+    },
+    "arrow3": {
+      "type": "integer"
+    },
+    "arrowTotal": {
       "type": "integer"
     },
     "newScore": {
       "type": "integer"
     },
-    "pijl1": {
-      "type": "integer"
+    "player": {
+      "via": "worps",
+      "model": "player"
     },
-    "pijl2": {
-      "type": "integer"
-    },
-    "pijl3": {
-      "type": "integer"
+    "game": {
+      "via": "worps",
+      "model": "game"
     }
   }
 }
