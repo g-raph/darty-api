@@ -32,6 +32,10 @@
     "winner": {
       "model": "player",
       "via": "cricket_wins"
+    },
+    "cricketScores": {
+      "collection": "cricket-score",
+      "via": "cricket_game"
     }
   }
 }

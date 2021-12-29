@@ -24,6 +24,10 @@
     "complete": {
       "type": "boolean",
       "default": false
+    },
+    "cricket_game": {
+      "via": "cricketScores",
+      "model": "cricket-game"
     }
   }
 }
