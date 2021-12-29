@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cricket_scores",
+  "info": {
+    "name": "CricketScore"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "player": {
+      "model": "player",
+      "via": "cricket_scores"
+    },
+    "hits": {
+      "type": "integer",
+      "default": 0
+    },
+    "complete": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

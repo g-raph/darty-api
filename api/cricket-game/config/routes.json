@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cricket-games",
+      "handler": "cricket-game.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cricket-games/count",
+      "handler": "cricket-game.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cricket-games/:id",
+      "handler": "cricket-game.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cricket-games",
+      "handler": "cricket-game.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cricket-games/:id",
+      "handler": "cricket-game.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cricket-games/:id",
+      "handler": "cricket-game.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

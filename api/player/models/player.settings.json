@@ -31,6 +31,18 @@
     },
     "color": {
       "type": "string"
+    },
+    "cricket_games": {
+      "via": "players",
+      "collection": "cricket-game"
+    },
+    "cricket_wins": {
+      "via": "winner",
+      "collection": "cricket-game"
+    },
+    "cricket_scores": {
+      "via": "player",
+      "collection": "cricket-score"
     }
   }
 }
